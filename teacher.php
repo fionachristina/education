@@ -1,3 +1,22 @@
+<?php
+
+    // Initialize the session
+
+    session_start();
+
+     
+
+    // If session variable is not set it will redirect to login page
+
+    if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+
+      header("location: login.php");
+
+      exit;
+
+    }
+	?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -94,17 +113,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Educ<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="index.php"><i class="icon-study"></i>Scholarly<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="courses.html">Courses</a></li>
-							<li class="active"><a href="teacher.html">Teacher</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="courses.php">Courses</a></li>
+							<li class="active"><a href="teacher.php">Teacher</a></li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="pricing.php">Pricing</a></li>
 							<li class="has-dropdown">
-								<a href="blog.html">Blog</a>
+								<a href="blog.php">Blog</a>
 								<ul class="dropdown">
 									<li><a href="#">Web Design</a></li>
 									<li><a href="#">eCommerce</a></li>
@@ -112,7 +131,7 @@
 									<li><a href="#">API</a></li>
 								</ul>
 							</li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.php">Contact</a></li>
 							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
 						</ul>
@@ -133,7 +152,7 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1 class="heading-section">Our Faculty</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
+									
 			   				</div>
 			   			</div>
 			   		</div>

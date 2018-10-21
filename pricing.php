@@ -1,4 +1,23 @@
-<!DOCTYPE HTML>
+<?php
+
+    // Initialize the session
+
+    session_start();
+
+     
+
+    // If session variable is not set it will redirect to login page
+
+    if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+
+      header("location: login.php");
+
+      exit;
+
+    }
+	?>
+	
+	<!DOCTYPE HTML>
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -94,17 +113,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Educ<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="index.php"><i class="icon-study"></i>Scholarly<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="courses.html">Courses</a></li>
-							<li><a href="teacher.html">Teacher</a></li>
-							<li><a href="about.html">About</a></li>
-							<li class="active"><a href="pricing.html">Pricing</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="courses.php">Courses</a></li>
+							<li><a href="teacher.php">Teacher</a></li>
+							<li><a href="about.php">About</a></li>
+							<li class="active"><a href="pricing.php">Pricing</a></li>
 							<li class="has-dropdown">
-								<a href="blog.html">Blog</a>
+								<a href="blog.php">Blog</a>
 								<ul class="dropdown">
 									<li><a href="#">Web Design</a></li>
 									<li><a href="#">eCommerce</a></li>
@@ -112,7 +131,7 @@
 									<li><a href="#">API</a></li>
 								</ul>
 							</li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.php">Contact</a></li>
 							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
 						</ul>
@@ -133,7 +152,7 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1 class="heading-section">Plan &amp; Pricing</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
+									
 			   				</div>
 			   			</div>
 			   		</div>
@@ -148,7 +167,7 @@
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Plan &amp; Pricing</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<p>Choose a payment plan</p>
 				</div>
 			</div>
 			<div class="row">
@@ -157,12 +176,12 @@
 						<div class="pricing__item">
 							<div class="wrap-price">
 								 <!-- <div class="icon icon-user2"></div> -->
-	                     <h3 class="pricing__title">Trial</h3>
+	                     <h3 class="pricing__title">Free</h3>
 	                     <!-- <p class="pricing__sentence">Single user license</p> -->
 							</div>
                      <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">$</span>0
+								<span class="pricing__currency">Ksh</span>0
                         </span>
                         <span class="pricing__anim pricing__anim--2">
 								<span class="pricing__period">per year</span>
@@ -186,12 +205,12 @@
 						<div class="pricing__item">
 							<div class="wrap-price">
 								<!-- <div class="icon icon-store"></div> -->
-	                     <h3 class="pricing__title">Silver</h3>
+	                     <h3 class="pricing__title">Premium( Gold)</h3>
 	                     <!-- <p class="pricing__sentence">Up to 5 users</p> -->
 							</div>
                      <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">$</span>79
+								<span class="pricing__currency">Ksh</span>10
                         </span>
                         <span class="pricing__anim pricing__anim--2">
 								<span class="pricing__period">per year</span>
@@ -215,12 +234,12 @@
                   <div class="pricing__item">
                   	<div class="wrap-price">
                   		<!-- <div class="icon icon-home2"></div> -->
-	                     <h3 class="pricing__title">Gold</h3>
+	                     <h3 class="pricing__title">Premium( Platinum)</h3>
 	                     <!-- <p class="pricing__sentence">Unlimited users</p> -->
 							</div>
                      <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">$</span>499
+								<span class="pricing__currency">Ksh</span>100
                         </span>
                         <span class="pricing__anim pricing__anim--2">
 								<span class="pricing__period">per year</span>
@@ -245,20 +264,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
-		<div class="overlay"></div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 animate-box">
-				<div class="date-counter text-center">
-					<h2>Get 400 of Online Courses for Free</h2>
-					<h3>By Mike Smith</h3>
-					<div class="simply-countdown simply-countdown-one"></div>
-					<p><strong>Limited Offer, Hurry Up!</strong></p>
-					<p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>

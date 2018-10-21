@@ -408,7 +408,7 @@
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Plan &amp; Pricing</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					
 				</div>
 			</div>
 			<div class="row">
@@ -417,7 +417,7 @@
 						<div class="pricing__item">
 							<div class="wrap-price">
 								 <!-- <div class="icon icon-user2"></div> -->
-	                     <h3 class="pricing__title">Trial</h3>
+	                     <h3 class="pricing__title">Free</h3>
 	                     <!-- <p class="pricing__sentence">Single user license</p> -->
 							</div>
                      <div class="pricing__price">
@@ -430,15 +430,15 @@
                      </div>
                      <div class="wrap-price">
                      	<ul class="pricing__feature-list">
-	                        <li class="pricing__feature">One Day Trial</li>
+	                        
 	                        <li class="pricing__feature">Limited Courses</li>
 	                        <li class="pricing__feature">Free 3 Lessons</li>
-	                        <li class="pricing__feature">No Supporter</li>
-	                        <li class="pricing__feature">No Tutorial</li>
-	                        <li class="pricing__feature">No Ebook</li>
+	                        <li class="pricing__feature">Limited Supporter</li>
+	                        <li class="pricing__feature">Limited Tutorial</li>
+	                        <li class="pricing__feature">Limited Ebook</li>
 	                         <li class="pricing__feature">Limited Registered User</li>
 	                     </ul>
-	                     <button class="pricing__action">Choose plan</button>
+	                     <a href = "pricing.php"><button class="pricing__action">Choose plan</button></a>
                      </div>
                   </div>
 					</div>
@@ -446,7 +446,7 @@
 						<div class="pricing__item">
 							<div class="wrap-price">
 								<!-- <div class="icon icon-store"></div> -->
-	                     <h3 class="pricing__title">Silver</h3>
+	                     <h3 class="pricing__title">Premium (Gold)</h3>
 	                     <!-- <p class="pricing__sentence">Up to 5 users</p> -->
 							</div>
                      <div class="pricing__price">
@@ -467,7 +467,7 @@
 	                        <li class="pricing__feature">Standard Tutorials</li>
 	                         <li class="pricing__feature">Unlimited Registered User</li>
 	                     </ul>
-	                     <button class="pricing__action">Choose plan</button>
+	                     <a href = "pricing.php"><button class="pricing__action">Choose plan</button></a>
                      </div>
                  </div>
 					</div>
@@ -475,7 +475,7 @@
                   <div class="pricing__item">
                   	<div class="wrap-price">
                   		<!-- <div class="icon icon-home2"></div> -->
-	                     <h3 class="pricing__title">Gold</h3>
+	                     <h3 class="pricing__title">Premium (Platinum)</h3>
 	                     <!-- <p class="pricing__sentence">Unlimited users</p> -->
 							</div>
                      <div class="pricing__price">
@@ -496,7 +496,7 @@
 	                        <li class="pricing__feature">Premium Tutorials</li>
 	                         <li class="pricing__feature">Unlimited Registered User</li>
 	                     </ul>
-	                     <button class="pricing__action">Choose plan</button>
+	                     <a href = "pricing.php"><button class="pricing__action">Choose plan</button></a>
                      </div>
                   </div>
                </div>

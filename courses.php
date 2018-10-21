@@ -176,9 +176,9 @@
 						<a href="#" class="course-img" style="background-image: url(images/project-1.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Web Master</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<h3><a href="#">Mathematics</a></h3>
+							<p>Start Math lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
+							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -187,9 +187,9 @@
 						<a href="#" class="course-img" style="background-image: url(images/project-2.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Business &amp; Accounting</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<h3><a href="#">English</a></h3>
+							<p>Start English lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
+							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -198,9 +198,9 @@
 						<a href="#" class="course-img" style="background-image: url(images/project-3.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Science &amp; Technology</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<h3><a href="#">Biology</a></h3>
+							<p>Start Biology lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
+							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -209,9 +209,9 @@
 						<a href="#" class="course-img" style="background-image: url(images/project-4.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Health &amp; Psychology</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<h3><a href="#">Chemistry</a></h3>
+							<p>Start Chemistry lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
+							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -220,9 +220,9 @@
 						<a href="#" class="course-img" style="background-image: url(images/project-5.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Science &amp; Technology</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<h3><a href="#">Geography</a></h3>
+							<p>Start Geography lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
+							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>
@@ -231,9 +231,9 @@
 						<a href="#" class="course-img" style="background-image: url(images/project-6.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Health &amp; Psychology</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+							<h3><a href="#">Music</a></h3>
+							<p>Start Music lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
+							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
 				</div>

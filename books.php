@@ -152,7 +152,7 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1 class="heading-section">Hi, <b><?php echo htmlspecialchars($_SESSION['username']); ?></b>.</h1>
-									<h2> This Section contains all the Revision Resources you need</h2>
+									<h2> This Section Contains all the Revision Resources you need</h2>
 			   				</div>
 			   			</div>
 			   		</div>

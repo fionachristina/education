@@ -198,121 +198,143 @@
 <!------ Include the above in your HEAD tag ---------->
 
 
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Scholarly &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="freehtml5.co" />
 
-<html lang="en">
- 
-   <head> 
-        
-<meta name="viewport" content="width=device-width, initial-scale=1">
-        
-<link rel="stylesheet" type="text/css" href="signup.css">
+    <!-- 
+    //////////////////////////////////////////////////////
 
+    FREE HTML5 TEMPLATE 
+    DESIGNED & DEVELOPED by FreeHTML5.co
         
-<!-- Website CSS style -->
-        
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    Website:        http://freehtml5.co/
+    Email:          info@freehtml5.co
+    Twitter:        http://twitter.com/fh5co
+    Facebook:       https://www.facebook.com/fh5co
 
-        
-<!-- Website Font style -->
-        
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-        
-        
-<!-- Google Fonts -->
-        
-<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-        
-<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-        
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-            
-<!--
-            CSS
-            ============================================= -->
-           
-<link rel="stylesheet" href="css/linearicons.css">=
-            
-<link rel="stylesheet" href="css/font-awesome.min.css">
-            
-<link rel="stylesheet" href="css/magnific-popup.css">
-            
-<link rel="stylesheet" href="css/nice-select.css">
-            
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-            
-<link rel="stylesheet" href="css/bootstrap.css">
-            
-<link rel="stylesheet" href="css/main.css">
-            
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    //////////////////////////////////////////////////////
+     -->
 
-        <style type="text/css">
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-            body{ font: 14px sans-serif; }
-
-            .wrapper{ width: 350px; padding: 20px; }                
-
-        </style>
-<title>Signup page</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
     
-</head>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-<header class="default-header">
-                
-<div class="container">
-                    
-<div class="header-wrap">
-                        
-<div class="header-top d-flex justify-content-between align-items-center">
-                            
-<div class="logo">
-                                
-<a href="#home"><img src="img/logo.png" alt=""></a>
-                            
-</div>
-                            
-<div class="main-menubar d-flex align-items-center">
-                                
-<nav class="hide">
-                                    
-<a href="#home">Home</a>
-                                   
- <a href="#service">Services</a>
-                                    
-<a href="#appoinment">Appoinment</a>
-                                    
-<a href="#consultant">Consultants</a>
-                                
-</nav>
-                                
-<div class="menu-bar"><span class="lnr lnr-menu">
-</span>
-</div>
-                            
-</div>
-                        
-</div>
-                    
-</div>
-                
-</div>
-            
-</header>  
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- Pricing -->
+    <link rel="stylesheet" href="css/pricing.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    </head>
     <body>
-
-
-<div class="container">
-                            
-      <div class="panel-heading">
-                   
-        <div class="panel-title text-center">
-                        
-            <h1 class="title">Sign up</h1>
-                        
+        
+    <div class="fh5co-loader"></div>
+    
+    <div id="page">
+    <nav class="fh5co-nav" role="navigation">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <p class="site">www.yourdomainname.com</p>
+                        <p class="num">Call: +254812345678</p>
+                        <ul class="fh5co-social">
+                            <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                            <li><a href="#"><i class="icon-dribbble2"></i></a></li>
+                            <li><a href="#"><i class="icon-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="fh5co-logo"><a href="index.php"><i class="icon-study"></i>Scholarly<span>.</span></a></div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="courses.php">Courses</a></li>
+                            <li><a href="teacher.php">Teacher</a></li>
+                            <li class="active"><a href="about.php">About</a></li>
+                            <li><a href="pricing.php">Pricing</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                            <!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                            <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <aside id="fh5co-hero">
+        <div class="flexslider">
+            <ul class="slides">
+            <li style="background-image: url(images/img_bg_4.jpg);">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                               <h1><strong></strong></h1>
+                               <h1 class="heading-section"><strong>SCHOLARLY</strong></h1>
+                                <h1 class="heading-section">Sign Up</h1>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </aside>
                 
      
 
@@ -365,11 +387,53 @@
             </form>
 
         </div>    
-</div>
-</div>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
+
+<div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <!-- Count Down -->
+    <script src="js/simplyCountdown.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    <script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+    </script>
     </body>
-
-    </html>
+</html>
 

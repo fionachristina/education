@@ -98,7 +98,7 @@
 				<div class="row">
 					<div class="col-xs-12 text-right">
 						<p class="site">www.yourdomainname.com</p>
-						<p class="num">Call: +01 123 456 7890</p>
+						<p class="num">Call: +254712345678</p>
 						<ul class="fh5co-social">
 							<li><a href="#"><i class="icon-facebook2"></i></a></li>
 							<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -169,119 +169,95 @@
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
 							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+							<p><strong>Jane Mutheu</strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+						<span>English Teacher</span>
+						<h3><a href="#">Jane Mutheu</a></h3>
+						<p>An English teacher based in Nairobi</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-2.jpg);">
 							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+						<span>Mathematics Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Mike Njoroge</a></h3>
+						<p>A Mathematics teacher based in Mombasa</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
 							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+							<p><strong>John Makama</strong> <br><a href=mailto:fionachristina6@gmail.com>makamajohn@gmail.com</a></p>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+						<span>Swahili Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>John Makama</a></h3>
+						<p>A swahili teacher based in Kisii</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
+						<div class="staff-img" style="background-image: url(images/staff-4.jpg);">
 							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+							<p><strong>William Otieno</strong> <br><a href=mailto:fionachristina6@gmail.com>otienowilliam@gmail.com</a></p>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+						<span>Biology Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>William Otieno</a></h3>
+						<p>A Biology teacher based in Kabarak</p>
+					</div>
+				</div>h
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-5.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>Sharon Andeka</strong> <br><a href=mailto:fionachristina6@gmail.com>andekasharon@gmail.com</a></p>
+							</ul>
+						</div>
+						<span>Chemistry Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Sharon Andeka</a></h3>
+						<p>A Chemistry teacher based in Kakamega</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
+						<div class="staff-img" style="background-image: url(images/staff-6.jpg);">
 							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+							<p><strong>Lagertha Ross</strong> <br><a href=mailto:fionachristina6@gmail.com>lagerthaross@gmail.com</a></p>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+						<span>Physics Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Lagertha Ross</a></h3>
+						<p>A Physics teacher based in Nairobi</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
+						<div class="staff-img" style="background-image: url(images/staff-7.jpg);">
 							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+							<p><strong>Halima Mwashigadi</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+						<span>Geography Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
+						<p>A Geography teacher based in Malindi</p>
 					</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-2.jpg);">
+						<div class="staff-img" style="background-image: url(images/staff-8.jpg);">
 							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
 							</ul>
 						</div>
 						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
 						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
 					</div>
 				</div>

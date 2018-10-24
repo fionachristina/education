@@ -79,7 +79,7 @@
 				<div class="row">
 					<div class="col-xs-12 text-right">
 						<p class="site">www.yourdomainname.com</p>
-						<p class="num">Call: +01 123 456 7890</p>
+						<p class="num">Call: +254812345678</p>
 						<ul class="fh5co-social">
 							<li><a href="#"><i class="icon-facebook2"></i></a></li>
 							<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -103,15 +103,6 @@
 							<li><a href="teacher.php">Teacher</a></li>
 							<li class="active"><a href="about.php">About</a></li>
 							<li><a href="pricing.php">Pricing</a></li>
-							<li class="has-dropdown">
-								<a href="blog.php">Blog</a>
-								<ul class="dropdown">
-									<li><a href="courses.php">Web Design</a></li>
-									<li><a href="courses.php">eCommerce</a></li>
-									<li><a href="courses.php">Branding</a></li>
-									<li><a href="courses.php">API</a></li>
-								</ul>
-							</li>
 							<li><a href="contact.php">Contact</a></li>
 							<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li> -->

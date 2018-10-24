@@ -10,7 +10,7 @@
 
     define('link_PASSWORD', '');
 
-    define('link_NAME', 'examplee');
+    define('link_NAME', 'scholarly');
 
      
 

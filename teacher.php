@@ -88,7 +88,9 @@
 
 	</head>
 	<body>
-		
+	<?php
+		$res = mysql_query("select * from faculty");
+?>
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -169,7 +171,7 @@
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
 							<ul class="fh5co-social">
-							<p><strong>Jane Mutheu</strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
+							<p><strong></strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
 							</ul>
 						</div>
 						<span>English Teacher</span>
@@ -212,7 +214,7 @@
 						<h3><a href=mailto:fionachristina6@gmail.com>William Otieno</a></h3>
 						<p>A Biology teacher based in Kabarak</p>
 					</div>
-				</div>h
+				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-5.jpg);">

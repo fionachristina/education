@@ -227,9 +227,8 @@
         <div class="top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-right">
-                        <p class="site">www.yourdomainname.com</p>
-                        <p class="num">Call: +254812345678</p>
+                    <div class="col-xs-12 text-right"></a>
+                        <a href = "adminlogin.php">Admin? Login Here</a>
                         <ul class="fh5co-social">
                             <li><a href="#"><i class="icon-facebook2"></i></a></li>
                             <li><a href="#"><i class="icon-twitter2"></i></a></li>

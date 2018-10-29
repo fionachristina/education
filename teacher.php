@@ -88,9 +88,7 @@
 
 	</head>
 	<body>
-	<?php
-		$res = mysql_query("select * from faculty");
-?>
+	
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -214,6 +212,7 @@
 						<h3><a href=mailto:fionachristina6@gmail.com>William Otieno</a></h3>
 						<p>A Biology teacher based in Kabarak</p>
 					</div>
+				</div>
 				</div>
 				<div class="col-md-3 animate-box text-center">
 					<div class="staff">

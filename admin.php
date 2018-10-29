@@ -1,21 +1,4 @@
-<?php
-
-    // Initialize the session
-
-    session_start();
-
-     
-
-    // If session variable is not set it will redirect to login page
-
-    if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
-
-      header("location: login.php");
-
-      exit;
-
-    }
-	?>
+<?php include('config.php') ?>
 	
 	<!DOCTYPE HTML>
 <html>
@@ -118,8 +101,6 @@
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li><a href="logout.php">Home</a></li>
-							<li class="active"><a href="courses.html">Courses</a></li>
-							<li><a href="teacher.php">Teacher</a></li>
 							<li><a href="about.php">About</a></li>
 							<li><a href="pricing.php">Pricing</a></li>
 							<li class="has-dropdown">
@@ -151,8 +132,8 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1 class="heading-section"> <b><?php echo htmlspecialchars($_SESSION['username']); ?></b>.</h1>
-									<h2> ADMIN PAGE</h2>
+			   					<h1 class="heading-section"> Welcome</h1>
+									<h2> Admin Page</h2>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -166,155 +147,194 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>SYLLABUS</h2>
-					<p>We offer a variety of courses in the 8-4-4 system as down below</p>
+					<h2>BOOKS</h2>
+					<p>Edit or delete books</p>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-1.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Mathematics</a></h3>
-							<p>Start Math lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-2.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">English</a></h3>
-							<p>Start English lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-3.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Biology</a></h3>
-							<p>Start Biology lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-4.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Chemistry</a></h3>
-							<p>Start Chemistry lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-5.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Geography</a></h3>
-							<p>Start Geography lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-6.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Music</a></h3>
-							<p>Start Music lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+  <div id="pictures">
+    <div class="col-md-3" id="column1">
+      <a href="https://www.phy.duke.edu/~rgb/Class/intro_physics_1/intro_physics_1.pdf" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51GJy6M7YwL._SX403_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>PHYSICS</p>
+      <a href="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Chemistry%20Coursebook%202nd%20Edition.pdf" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/511sgb16xbL._SX368_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>CHEMISTRY</p>
+    </div>
 
+    <div class="col-md-3">
+      <a href="http://filestore.aqa.org.uk/subjects/AQA-MFP2-TEXTBOOK.PDF" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91VlmAhuOVL._AC_UL320_SR238,320_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>MATHS</p>
+      <a href="https://www.ets.org/s/gre/pdf/practice_book_lit.pdf" target="_blank">
+        <img src="https://s-media-cache-ak0.pinimg.com/564x/b8/c5/0c/b8c50c3a94cbef2701f603cb5f84e46b.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>ENGLISH</p>
+    </div>
 
-	<div id="fh5co-course">
+    <div class="col-md-3">
+      <a href="http://www.ocr.org.uk/Images/170128-specification-accredited-a-level-gce-history-a-h505.pdf" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/61Dz2Cj3ImL._SX258_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>HISTORY</p>
+      <a href="http://www.learndev.org/dl/Science/EarthScience/ThePlanetWeLiveOn.pdf" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51Ubn8ZHDBL._SX392_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>GEOLOGY</p>
+    </div>
+
+    <div class="col-md-3">
+      <a href="http://www.computingbook.org/FullText.pdf" target="_blank">
+        <img src="http://maxpapers.com/wp-content/uploads/2012/11/comp-book.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>COMPUTER</p>
+      <a href="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Economics.pdf" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51y%2BMbRfw4L._SX395_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
+      </a>
+      <p>ECONOMICS</p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div id="fh5co-course">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>USERS</h2>
-					<p>We offer a variety of courses in the 8-4-4 system as down below</p>
+					<h2>VIDEOS</h2>
+					<p>Edit or delete videos</p>
 				</div>
-			</div>
+  <div id="videos">
+    
+    <div class="col-md-4">
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/G8VAmfdfUN4" frameborder="0" allowfullscreen></iframe>
+      <p>MATH REVISION</p>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/EBcaw8SA5kw" frameborder="0" allowfullscreen></iframe>
+      <p>CHEMISTRY REVISION</p>
+    </div>
+    <div class="col-md-4">
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/eAv2xyVip_Q" frameborder="0" allowfullscreen></iframe>
+      <p>BIOLOGY REVISION</p>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/7oOX48NOyTQ" frameborder="0" allowfullscreen></iframe>
+      <p>ENGLISH REVISION</p>
+    </div>
+    <div class="col-md-4">
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/C6Y8u1GNysE" frameborder="0" allowfullscreen></iframe>
+      <p>ECONOMICS REVISION</p>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/IXwCMK1UG5g" frameborder="0" allowfullscreen></iframe>
+      <p>COMPUTER REVISION</p>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+<div id="fh5co-staff">
+		<div class="container">
+		<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Faculty</h2>
+					<p>Edit or delete the faculty</p>
+				</div>
+				</div>
 			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-1.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Mathematics</a></h3>
-							<p>Start Math lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+				<div class="col-md-3 text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
+							<ul class="fh5co-social">
+							<p><strong></strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
+							</ul>
 						</div>
+						<span>English Teacher</span>
+						<h3><a href="#">Jane Mutheu</a></h3>
+						<p>An English teacher based in Nairobi</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-2.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">English</a></h3>
-							<p>Start English lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-2.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
+							</ul>
 						</div>
+						<span>Mathematics Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Mike Njoroge</a></h3>
+						<p>A Mathematics teacher based in Mombasa</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-3.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Biology</a></h3>
-							<p>Start Biology lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>John Makama</strong> <br><a href=mailto:fionachristina6@gmail.com>makamajohn@gmail.com</a></p>
+							</ul>
 						</div>
+						<span>Swahili Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>John Makama</a></h3>
+						<p>A swahili teacher based in Kisii</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-4.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Chemistry</a></h3>
-							<p>Start Chemistry lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-4.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>William Otieno</strong> <br><a href=mailto:fionachristina6@gmail.com>otienowilliam@gmail.com</a></p>
+							</ul>
 						</div>
+						<span>Biology Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>William Otieno</a></h3>
+						<p>A Biology teacher based in Kabarak</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-5.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Geography</a></h3>
-							<p>Start Geography lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+				</div>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-5.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>Sharon Andeka</strong> <br><a href=mailto:fionachristina6@gmail.com>andekasharon@gmail.com</a></p>
+							</ul>
 						</div>
+						<span>Chemistry Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Sharon Andeka</a></h3>
+						<p>A Chemistry teacher based in Kakamega</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(images/project-6.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Music</a></h3>
-							<p>Start Music lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
-							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-6.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>Lagertha Ross</strong> <br><a href=mailto:fionachristina6@gmail.com>lagerthaross@gmail.com</a></p>
+							</ul>
 						</div>
+						<span>Physics Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Lagertha Ross</a></h3>
+						<p>A Physics teacher based in Nairobi</p>
+					</div>
+				</div>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-7.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>Halima Mwashigadi</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
+							</ul>
+						</div>
+						<span>Geography Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
+						<p>A Geography teacher based in Malindi</p>
+					</div>
+				</div>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(images/staff-8.jpg);">
+							<ul class="fh5co-social">
+							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
+							</ul>
+						</div>
+						<span>Health Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
 					</div>
 				</div>
 			</div>
@@ -434,4 +454,3 @@
 	</script>
 	</body>
 </html>
-

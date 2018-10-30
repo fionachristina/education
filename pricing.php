@@ -122,18 +122,9 @@
 							<li><a href="teacher.php">Teacher</a></li>
 							<li><a href="about.php">About</a></li>
 							<li class="active"><a href="pricing.php">Pricing</a></li>
-							<li class="has-dropdown">
-								<a href="blog.php">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
 							<li><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
-							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
+							<li class="btn-cta"><a href="login.php"><span>Login</span></a></li>
+							<li class="btn-cta"><a href="register.php"><span>Register</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -197,39 +188,11 @@
 	                        <li class="pricing__feature">No Ebook</li>
 	                         <li class="pricing__feature">Limited Registered User</li>
 	                     </ul>
-	                     <button class="pricing__action">Choose plan</button>
+	                   <button class="pricing__action">Choose plan</button>
                      </div>
                   </div>
 					</div>
-					<div class="col-md-4 animate-box">
-						<div class="pricing__item">
-							<div class="wrap-price">
-								<!-- <div class="icon icon-store"></div> -->
-	                     <h3 class="pricing__title">Premium( Gold)</h3>
-	                     <!-- <p class="pricing__sentence">Up to 5 users</p> -->
-							</div>
-                     <div class="pricing__price">
-                        <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">Ksh</span>10
-                        </span>
-                        <span class="pricing__anim pricing__anim--2">
-								<span class="pricing__period">per year</span>
-                        </span>
-                     </div>
-                     <div class="wrap-price">
-                     	<ul class="pricing__feature-list">
-	                        <li class="pricing__feature">One Year Standard Access</li>
-	                        <li class="pricing__feature">Limited Courses</li>
-	                        <li class="pricing__feature">300+ Lessons</li>
-	                        <li class="pricing__feature">Random Supporter</li>
-	                        <li class="pricing__feature">View Only Ebook</li>
-	                        <li class="pricing__feature">Standard Tutorials</li>
-	                         <li class="pricing__feature">Unlimited Registered User</li>
-	                     </ul>
-	                     <button class="pricing__action">Choose plan</button>
-                     </div>
-                 </div>
-					</div>
+					 
 					<div class="col-md-4 animate-box">
                   <div class="pricing__item">
                   	<div class="wrap-price">
@@ -253,9 +216,11 @@
 	                        <li class="pricing__feature">Free Supporter</li>
 	                        <li class="pricing__feature">Free Ebook Downloads</li>
 	                        <li class="pricing__feature">Premium Tutorials</li>
-	                         <li class="pricing__feature">Unlimited Registered User</li>
-	                     </ul>
-	                     <button class="pricing__action">Choose plan</button>
+	                        <li class="pricing__feature">Unlimited Registered User</li>
+							</ul>
+							<a href="books1.php"><button class="pricing__action">Choose plan</button></a>
+	                     <!--<button class="pricing__action">Choose plan</button>-->
+	                     
                      </div>
                   </div>
                </div>
@@ -266,63 +231,48 @@
 
 	
 
+
 	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">
-					<h3>About Education</h3>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-				</div>
+				<h3>About Scholarly</h3>
+					<p>Kenya's digitized curriculum content.</p>
+<p>Affordable. Accessible. Everywhere.</p>
+</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learning</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Course</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Meetups</a></li>
+						<li><a href="courses.php">Courses</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learn &amp; Grow</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Handbook</a></li>
-						<li><a href="#">Held Desk</a></li>
+						<li><a href="books.php">Books</a></li>
+						<li><a href="books.php">Past Papers</a></li>
+						<li><a href="books.php">Videos</a></li>
 					</ul>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Engage us</h3>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Marketing</a></li>
-						<li><a href="#">Visual Assistant</a></li>
-						<li><a href="#">System Analysis</a></li>
-						<li><a href="#">Advertise</a></li>
-					</ul>
-				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Legal</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Find Designers</a></li>
-						<li><a href="#">Find Developers</a></li>
-						<li><a href="#">Teams</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">API</a></li>
+						<li><a href="teacher.php">Find Tutors</a></li>
+						<li><a href="books.php">Find Books</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+				<p>
+						<small class="block">&copy; 2018 . All Rights Reserved.</small> 
+						<small class="block">Designed by Fiona & Lorna</small>
 					</p>
 				</div>
 			</div>

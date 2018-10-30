@@ -122,15 +122,6 @@
 							<li><a href="teacher.php">Teacher</a></li>
 							<li><a href="about.php">About</a></li>
 							<li><a href="pricing.php">Pricing</a></li>
-							<li class="has-dropdown">
-								<a href="blog.php">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
 							<li><a href="contact.php">Contact</a></li>
 							<li class="btn-cta"><a href="logout.php"><span>Log out</span></a></li>
 							<!-- <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li> -->
@@ -178,10 +169,24 @@
         <img src="https://images-na.ssl-images-amazon.com/images/I/51GJy6M7YwL._SX403_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>PHYSICS</p>
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
       <a href="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Chemistry%20Coursebook%202nd%20Edition.pdf" target="_blank">
         <img src="https://images-na.ssl-images-amazon.com/images/I/511sgb16xbL._SX368_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>CHEMISTRY</p>
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
     </div>
 
     <div class="col-md-3">
@@ -189,10 +194,24 @@
         <img src="https://images-na.ssl-images-amazon.com/images/I/91VlmAhuOVL._AC_UL320_SR238,320_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>MATHS</p>
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
       <a href="https://www.ets.org/s/gre/pdf/practice_book_lit.pdf" target="_blank">
         <img src="https://s-media-cache-ak0.pinimg.com/564x/b8/c5/0c/b8c50c3a94cbef2701f603cb5f84e46b.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>ENGLISH</p>
+	  <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
     </div>
 
     <div class="col-md-3">
@@ -200,10 +219,24 @@
         <img src="https://images-na.ssl-images-amazon.com/images/I/61Dz2Cj3ImL._SX258_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>HISTORY</p>
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
       <a href="http://www.learndev.org/dl/Science/EarthScience/ThePlanetWeLiveOn.pdf" target="_blank">
         <img src="https://images-na.ssl-images-amazon.com/images/I/51Ubn8ZHDBL._SX392_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>GEOLOGY</p>
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
     </div>
 
     <div class="col-md-3">
@@ -211,10 +244,24 @@
         <img src="http://maxpapers.com/wp-content/uploads/2012/11/comp-book.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>COMPUTER</p>
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
       <a href="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Economics.pdf" target="_blank">
         <img src="https://images-na.ssl-images-amazon.com/images/I/51y%2BMbRfw4L._SX395_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
       </a>
       <p>ECONOMICS</p>
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="J8DTCVSKVT8E2">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
     </div>
   </div>
   </div>

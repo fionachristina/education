@@ -1,4 +1,4 @@
-<?php
+-<?php
 
     // Initialize the session
 
@@ -117,20 +117,11 @@
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li><a href="logout.php">Home</a></li>
-							<li class="active"><a href="courses.html">Courses</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li class="active"><a href="courses.php">Courses</a></li>
 							<li><a href="teacher.php">Teacher</a></li>
 							<li><a href="about.php">About</a></li>
 							<li><a href="pricing.php">Pricing</a></li>
-							<li class="has-dropdown">
-								<a href="blog.php">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
 							<li><a href="contact.php">Contact</a></li>
 							<li class="btn-cta"><a href="logout.php"><span>Log out</span></a></li>
 							<!-- <li class="btn-cta"><a href="#"><span>Create a Course</span></a></li> -->
@@ -177,7 +168,7 @@
 						</a>
 						<div class="desc">
 							<h3><a href="#">Mathematics</a></h3>
-							<p>Start Math lessons by clicking the link below or access <a href = "#">Past Papers</a> here</p>
+							<p>Start Math lessons by clicking the link below or access <a href = "https://www.advance-africa.com/KCSE-Past-Papers-2017-Mathematics-Alt-B-Paper-2.html">Past Papers</a> here</p>
 							<span><a href="books.php" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
@@ -240,63 +231,46 @@
 			</div>
 		</div>
 	</div>
-
+	</div>
 	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">
-					<h3>About Scholarly</h3>
+				<h3>About Scholarly</h3>
 					<p>Kenya's digitized curriculum content.</p>
 <p>Affordable. Accessible. Everywhere.</p>
-				</div>
+</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learning</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Course</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Meetups</a></li>
+						<li><a href="courses.php">Courses</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Learn &amp; Grow</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Handbook</a></li>
-						<li><a href="#">Held Desk</a></li>
+						<li><a href="books.php">Books</a></li>
+						<li><a href="books.php">Past Papers</a></li>
+						<li><a href="books.php">Videos</a></li>
 					</ul>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-					<h3>Engage us</h3>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Marketing</a></li>
-						<li><a href="#">Visual Assistant</a></li>
-						<li><a href="#">System Analysis</a></li>
-						<li><a href="#">Advertise</a></li>
-					</ul>
-				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
 					<h3>Legal</h3>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Find Designers</a></li>
-						<li><a href="#">Find Developers</a></li>
-						<li><a href="#">Teams</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">API</a></li>
+						<li><a href="teacher.php">Find Tutors</a></li>
+						<li><a href="books.php">Find Books</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-					<p>
+				<p>
 						<small class="block">&copy; 2018 . All Rights Reserved.</small> 
 						<small class="block">Designed by Fiona & Lorna</small>
 					</p>

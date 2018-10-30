@@ -122,15 +122,6 @@
 							<li class="active"><a href="teacher.php">Teacher</a></li>
 							<li><a href="about.php">About</a></li>
 							<li><a href="pricing.php">Pricing</a></li>
-							<li class="has-dropdown">
-								<a href="blog.php">Blog</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
 							<li><a href="contact.php">Contact</a></li>
 							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
@@ -169,11 +160,11 @@
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
 							<ul class="fh5co-social">
-							<p><strong></strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
+							<p><strong>Jane Mutheu</strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
 							</ul>
 						</div>
 						<span>English Teacher</span>
-						<h3><a href="#">Jane Mutheu</a></h3>
+						<h3><a href=mailto:fionachristina6@gmail.com>Jane Mutheu</a></h3>
 						<p>An English teacher based in Nairobi</p>
 					</div>
 				</div>
@@ -242,7 +233,7 @@
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-7.jpg);">
 							<ul class="fh5co-social">
-							<p><strong>Halima Mwashigadi</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
+							<p><strong>Halima Mwashigadi</strong> <br><a href=mailto:fionachristina6@gmail.com>halimamwashigadi@gmail.com</a></p>
 							</ul>
 						</div>
 						<span>Geography Teacher</span>
@@ -254,12 +245,12 @@
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-8.jpg);">
 							<ul class="fh5co-social">
-							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
+							<p><strong>Jermaine Lusala</strong> <br><a href=mailto:fionachristina6@gmail.com>jlusala@gmail.com</a></p>
 							</ul>
 						</div>
-						<span>Health Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+						<span>Music Teacher</span>
+						<h3><a href=mailto:fionachristina6@gmail.com>Jermaine Lusala</a></h3>
+						<p>A Music Teacher based in Kitale</p>
 					</div>
 				</div>
 			</div>

@@ -75,7 +75,7 @@ function register(){
             $_SESSION['success']  = "New user successfully created!!";
             header('location: adminlogin.php');
         }else{
-            $query = "INSERT INTO admins (username, user_type, password,) 
+            $query = "INSERT INTO admins (username, user_type, password) 
                       VALUES('$username', '$user_type', '$password')";
             mysqli_query($link, $query);
 

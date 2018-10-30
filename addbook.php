@@ -1,192 +1,24 @@
-
-
-    <?php
-
-    // Include config file
-
-    require_once 'config.php';
-
-     
-
-    // Define variables and initialize with empty values
-
-    $username = $password = $confirm_password = "";
-
-    $username_err = $password_err = $confirm_password_err = "";
-
-     
-
-    // Processing form data when form is submitted
-
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-     
-
-        // Validate username
-
-        if(empty(trim($_POST["username"]))){
-
-            $username_err = "Please enter a username.";
-
-        } else{
-
-            // Prepare a select statement
-
-            $sql = "SELECT id FROM users WHERE username = ?";
-
-            
-
-            if($stmt = mysqli_prepare($link, $sql)){
-
-                // Bind variables to the prepared statement as parameters
-
-                mysqli_stmt_bind_param($stmt, "s", $param_username);
-
-                
-
-                // Set parameters
-
-                $param_username = trim($_POST["username"]);
-
-                
-
-                // Attempt to execute the prepared statement
-
-                if(mysqli_stmt_execute($stmt)){
-
-                    /* store result */
-
-                    mysqli_stmt_store_result($stmt);
-
-                    
-
-                    if(mysqli_stmt_num_rows($stmt) == 1){
-
-                        $username_err = "This username is already taken.";
-
-                    } else{
-
-                        $username = trim($_POST["username"]);
-
-                    }
-
-                } else{
-
-                    echo "Oops! Something went wrong. Please try again later.";
-
-                }
-
-            }
-
-             
-
-            // Close statement
-
-            mysqli_stmt_close($stmt);
-
-        }
-
-        
-
-        // Validate password
-
-        if(empty(trim($_POST['password']))){
-
-            $password_err = "Please enter a password.";     
-
-        } elseif(strlen(trim($_POST['password'])) < 6){
-
-            $password_err = "Password must have atleast 6 characters.";
-
-        } else{
-
-            $password = trim($_POST['password']);
-
-        }
-
-        
-
-        // Validate confirm password
-
-        if(empty(trim($_POST["confirm_password"]))){
-
-            $confirm_password_err = 'Please confirm password.';     
-
-        } else{
-
-            $confirm_password = trim($_POST['confirm_password']);
-
-            if($password != $confirm_password){
-
-                $confirm_password_err = 'Password did not match.';
-
-            }
-
-        }
-
-        
-
-        // Check input errors before inserting in database
-
-        if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
-
-            
-
-            // Prepare an insert statement
-
-            $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
-
-             
-
-            if($stmt = mysqli_prepare($link, $sql)){
-
-                // Bind variables to the prepared statement as parameters
-
-                mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-
-                
-
-                // Set parameters
-
-                $param_username = $username;
-
-                $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-
-                
-
-                // Attempt to execute the prepared statement
-
-                if(mysqli_stmt_execute($stmt)){
-
-                    // Redirect to login page
-
-                    header("location: admin.php");
-
-                } else{
-
-                    echo "Something went wrong. Please try again later.";
-
-                }
-
-            }
-
-             
-
-            // Close statement
-
-            mysqli_stmt_close($stmt);
-
-        }
-
-        
-
-        // Close connection
-
-        mysqli_close($link);
-
-    }
-
-    ?>
+<?php 
+include('book.php');
+$db_host = 'localhost'; // Server Name
+$db_user = 'root'; // Username
+$db_pass = ''; // Password
+$db_name = 'scholarly'; // Database Name
+
+$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+if (!$conn) {
+    die ('Failed to connect to MySQL: ' . mysqli_connect_error());  
+}
+
+$sql = 'SELECT * 
+        FROM subject';
+$query = mysqli_query($conn, $sql);
+
+if (!$query) {
+    die ('SQL Error: ' . mysqli_error($conn));
+}
+
+ ?>
 
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
@@ -322,7 +154,7 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1 class="heading-section">ADMIN ONLY!!</h1>
-									<h1>Add user</h1>
+									<h1>Add book</h1>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -334,62 +166,103 @@
 
 
 <div class="container">
-                            
-      <div class="panel-heading">
-                   
-        <div class="panel-title text-center">
-                        
-            <h1 class="title">Add user</h1>
-                        
-        </div>
+    <div class="main-login main-center">
+            <form class="form-horizontal" action="book.php" method="post" class="form-style-9">
+    <?php echo display_error(); ?>
+<ul>
+  <li>
+  <?php
+    $con=mysqli_connect("localhost","root","","scholarly");
+    // Check connection
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+?>
+     <div class="form-group">
 
-    </div>
-            
-     
+<label for="username" class="cols-sm-2 control-label">Name</label>
+    <input type="text" name="name" class="form-control" placeholder="Name">
+</div>
 
+<div class="form-group">
 
+<label for="username" class="cols-sm-2 control-label">Book_Cover</label>
+    <input type="text" name="book_cover" class="form-control" placeholder="Link for Book_cover">
+</div>
 
-           <div class="main-login main-center">
+<div class="form-group">
 
-            <form class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+<label for="username" class="cols-sm-2 control-label">Link</label>
+    <input type="text" name="link" class="form-control" placeholder="Link to the book">
+</div>
 
-                <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+<div class="form-group">
 
-                    <label>Username</label>
-
-                    <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
-
-                    <span class="help-block"><?php echo $username_err; ?></span>
-
-                </div>    
-
-                <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-
-                    <label>Password</label>
-
-                    <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
-
-                    <span class="help-block"><?php echo $password_err; ?></span>
+                    <input type="submit" name="register_btn" class="btn btn-primary" value="Add Book">
 
                 </div>
+</form>
 
-                <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-
-                    <label>Confirm Password</label>
-
-                    <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
-
-                    <span class="help-block"><?php echo $confirm_password_err; ?></span>
-
+<div id="fh5co-course">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>BOOKS</h2>
+					<p>Edit or delete books</p>
+					<p><a class="btn btn-primary btn-lg btn-learn" href="addbook.php">Add Book</a></p>
+				</div>
                 </div>
+				<div class="container-fluid bg-3 text-center">    
+  <div class="row">
 
-                <div class="form-group">
 
-                    <input type="submit" class="btn btn-primary" value="Submit">
+      <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "scholarly";
 
-                </div>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-            </form>
+$sql = "SELECT * FROM subject";
+$result = $conn->query($sql);
+
+?>
+<div class="table-responsive">
+<table class="table">
+        <tr class="header">
+            <td>Name</td>
+            <td>Book_Cover</td>
+            <td>Link</td>
+            <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <?php
+           while ($row =$result->fetch_assoc()) {
+            $n=$row['sname'];
+            $um=$row['book _cover'];
+            $em=$row['link'];
+           
+               echo "<tr class= info>";
+               echo "<td>".$n."</td>";
+               echo "<td>".$um."</td>";
+               echo "<td>".$em."</td>";
+               echo "<td><a class=\"btn btn-danger\" href=\"delete.php?username=".$um."\">Delete</a></td>";
+               echo "</tr>";
+           }
+
+$conn->close();
+        ?>
+    </table>
+    </div>             
+              <hr/>         
+  </div>
+
+</div>
 
         </div>    
 

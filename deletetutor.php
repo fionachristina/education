@@ -12,7 +12,7 @@ if ($connn->connect_error) {
     die("Connection failed: " . $connn->connect_error);
 }
 if (null !== $username) {
-	$sql = "DELETE FROM users WHERE `username` = '$user';";
+	$sql = "DELETE FROM faculty WHERE `username` = '$user';";
 $res = $connn->query($sql);
 if ($res === TRUE) {
     echo "Record deleted successfully";

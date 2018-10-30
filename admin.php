@@ -149,54 +149,57 @@
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>BOOKS</h2>
 					<p>Edit or delete books</p>
+					<p><a class="btn btn-primary btn-lg btn-learn" href="addbook.php">Add Book</a></p>
 				</div>
                 </div>
-  <div id="pictures">
-    <div class="col-md-3" id="column1">
-      <a href="https://www.phy.duke.edu/~rgb/Class/intro_physics_1/intro_physics_1.pdf" target="_blank">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/51GJy6M7YwL._SX403_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>PHYSICS</p>
-      <a href="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Chemistry%20Coursebook%202nd%20Edition.pdf" target="_blank">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/511sgb16xbL._SX368_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>CHEMISTRY</p>
-    </div>
+				<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+      <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "scholarly";
 
-    <div class="col-md-3">
-      <a href="http://filestore.aqa.org.uk/subjects/AQA-MFP2-TEXTBOOK.PDF" target="_blank">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/91VlmAhuOVL._AC_UL320_SR238,320_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>MATHS</p>
-      <a href="https://www.ets.org/s/gre/pdf/practice_book_lit.pdf" target="_blank">
-        <img src="https://s-media-cache-ak0.pinimg.com/564x/b8/c5/0c/b8c50c3a94cbef2701f603cb5f84e46b.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>ENGLISH</p>
-    </div>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-    <div class="col-md-3">
-      <a href="http://www.ocr.org.uk/Images/170128-specification-accredited-a-level-gce-history-a-h505.pdf" target="_blank">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/61Dz2Cj3ImL._SX258_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>HISTORY</p>
-      <a href="http://www.learndev.org/dl/Science/EarthScience/ThePlanetWeLiveOn.pdf" target="_blank">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/51Ubn8ZHDBL._SX392_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>GEOLOGY</p>
-    </div>
+$sql = "SELECT * FROM subject";
+$result = $conn->query($sql);
 
-    <div class="col-md-3">
-      <a href="http://www.computingbook.org/FullText.pdf" target="_blank">
-        <img src="http://maxpapers.com/wp-content/uploads/2012/11/comp-book.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>COMPUTER</p>
-      <a href="https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Economics.pdf" target="_blank">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/51y%2BMbRfw4L._SX395_BO1,204,203,200_.jpg" class="img-thumbnail" alt="book1" height="150" width="120">
-      </a>
-      <p>ECONOMICS</p>
-    </div>
+?>
+<div class="table-responsive">
+<table class="table">
+        <tr class="header">
+            <td>Name</td>
+            <td>Book_Cover</td>
+            <td>Link</td>
+            <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <?php
+           while ($row =$result->fetch_assoc()) {
+            $n=$row['sname'];
+            $um=$row['book _cover'];
+            $em=$row['link'];
+           
+               echo "<tr class= info>";
+               echo "<td>".$n."</td>";
+               echo "<td>".$um."</td>";
+               echo "<td>".$em."</td>";
+               echo "<td><a class=\"btn btn-danger\" href=\"delete.php?username=".$um."\">Delete</a></td>";
+               echo "</tr>";
+           }
+
+$conn->close();
+        ?>
+    </table>
+    </div>             
+              <hr/>         
   </div>
-  </div>
+</div>
   </div>
 
   <div id="fh5co-course">
@@ -236,110 +239,129 @@
 		<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Faculty</h2>
-					<p>Edit or delete the faculty</p>
+					<p><a class="btn btn-primary btn-lg btn-learn" href="edittutor.php">Update tutor details</a></p>
 				</div>
 				</div>
-			<div class="row">
-				<div class="col-md-3 text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
-							<ul class="fh5co-social">
-							<p><strong></strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>English Teacher</span>
-						<h3><a href="#">Jane Mutheu</a></h3>
-						<p>An English teacher based in Nairobi</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-2.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Mathematics Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Mike Njoroge</a></h3>
-						<p>A Mathematics teacher based in Mombasa</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>John Makama</strong> <br><a href=mailto:fionachristina6@gmail.com>makamajohn@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Swahili Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>John Makama</a></h3>
-						<p>A swahili teacher based in Kisii</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-4.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>William Otieno</strong> <br><a href=mailto:fionachristina6@gmail.com>otienowilliam@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Biology Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>William Otieno</a></h3>
-						<p>A Biology teacher based in Kabarak</p>
-					</div>
-				</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-5.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Sharon Andeka</strong> <br><a href=mailto:fionachristina6@gmail.com>andekasharon@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Chemistry Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Sharon Andeka</a></h3>
-						<p>A Chemistry teacher based in Kakamega</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-6.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Lagertha Ross</strong> <br><a href=mailto:fionachristina6@gmail.com>lagerthaross@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Physics Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Lagertha Ross</a></h3>
-						<p>A Physics teacher based in Nairobi</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-7.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Halima Mwashigadi</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Geography Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
-						<p>A Geography teacher based in Malindi</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-8.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-			</div>
+				<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+      <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "scholarly";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM faculty";
+$result = $conn->query($sql);
+
+?>
+<div class="table-responsive">
+<table class="table">
+        <tr class="header">
+		    <td>id</td>
+            <td>name</td>
+            <td>email</td>
+            <td>subject</td>
+            <td>location</td>
+            <td>image</td>
+            <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <?php
+           while ($row =$result->fetch_assoc()) {
+			$id=$row['id'];
+            $n=$row['name'];
+            $um=$row['email'];
+            $em=$row['subject'];
+            $cn=$row['location'];
+            $bl=$row['image'];
+			   echo "<tr class= info>";
+			   echo "<td>".$id."</td>";
+               echo "<td>".$n."</td>";
+               echo "<td>".$um."</td>";
+               echo "<td>".$em."</td>";
+               echo "<td>".$cn."</td>";
+               echo "<td>".$bl."</td>";
+               echo "<td><a class=\"btn btn-danger\" href=\"deletetutor.php?username=".$um."\">Delete</a></td>";
+               echo "</tr>";
+           }
+
+$conn->close();
+        ?>
+    </table>
+    </div>             
+              <hr/>         
+  </div>
+</div>
 		</div>
 	</div>
+
+<div id="fh5co-staff">
+		<div class="container">
+		<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>USERS</h2>
+					<p><a class="btn btn-primary btn-lg btn-learn" href="adduser.php">Add User</a></p>
+					<p>Delete users</p>
+				</div>
+				</div>
+	<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+      <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "scholarly";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM users";
+$result = $conn->query($sql);
+
+?>
+<div class="table-responsive">
+<table class="table">
+        <tr class="header">
+            <td>ID</td>
+            <td>USERNAME</td>
+            <td>PASSWORD</td>
+            <td>CREATED_ON</td>
+            <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <?php
+           while ($row =$result->fetch_assoc()) {
+            $n=$row['id'];
+            $um=$row['username'];
+            $em=$row['password'];
+            $cn=$row['created_at'];
+           
+               echo "<tr class= info>";
+               echo "<td>".$n."</td>";
+               echo "<td>".$um."</td>";
+               echo "<td>".$em."</td>";
+               echo "<td>".$cn."</td>";
+               echo "<td><a class=\"btn btn-danger\" href=\"delete.php?username=".$um."\">Delete</a></td>";
+               echo "</tr>";
+           }
+
+$conn->close();
+        ?>
+    </table>
+    </div>             
+              <hr/>         
+  </div>
+</div>
+</div>
 
 	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>

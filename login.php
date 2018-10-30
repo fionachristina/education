@@ -315,6 +315,7 @@
                     <input type="submit" class="btn btn-primary" value="Login">
 
                 </div>
+                <a href="register.php">Forgot Password?</a>
 
                 <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
 

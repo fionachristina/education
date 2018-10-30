@@ -166,121 +166,73 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
-							<ul class="fh5co-social">
-							<p><strong></strong> <br><a href=mailto:fionachristina6@gmail.com>mutheujane@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>English Teacher</span>
-						<h3><a href="#">Jane Mutheu</a></h3>
-						<p>An English teacher based in Nairobi</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-2.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Mathematics Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Mike Njoroge</a></h3>
-						<p>A Mathematics teacher based in Mombasa</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>John Makama</strong> <br><a href=mailto:fionachristina6@gmail.com>makamajohn@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Swahili Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>John Makama</a></h3>
-						<p>A swahili teacher based in Kisii</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-4.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>William Otieno</strong> <br><a href=mailto:fionachristina6@gmail.com>otienowilliam@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Biology Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>William Otieno</a></h3>
-						<p>A Biology teacher based in Kabarak</p>
-					</div>
+
+				<div id="fh5co-staff">
+		<div class="container">
+		<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Faculty</h2>
+					
 				</div>
 				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-5.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Sharon Andeka</strong> <br><a href=mailto:fionachristina6@gmail.com>andekasharon@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Chemistry Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Sharon Andeka</a></h3>
-						<p>A Chemistry teacher based in Kakamega</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-6.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Lagertha Ross</strong> <br><a href=mailto:fionachristina6@gmail.com>lagerthaross@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Physics Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Lagertha Ross</a></h3>
-						<p>A Physics teacher based in Nairobi</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-7.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Halima Mwashigadi</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Geography Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
-						<p>A Geography teacher based in Malindi</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-8.jpg);">
-							<ul class="fh5co-social">
-							<p><strong>Mike Njoroge</strong> <br><a href=mailto:fionachristina6@gmail.com>mike2njoroge@gmail.com</a></p>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href=mailto:fionachristina6@gmail.com>Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-			</div>
+				<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+      <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "scholarly";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM faculty";
+$result = $conn->query($sql);
+
+?>
+<div class="table-responsive">
+<table class="table">
+        <tr class="header">
+		    <td>id</td>
+            <td>name</td>
+            <td>email</td>
+            <td>subject</td>
+            <td>location</td>
+            <td>image</td>
+            <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <?php
+           while ($row =$result->fetch_assoc()) {
+			$id=$row['id'];
+            $n=$row['name'];
+            $um=$row['email'];
+            $em=$row['subject'];
+            $cn=$row['location'];
+            $bl=$row['image'];
+			   echo "<tr class= info>";
+			   echo "<td>".$id."</td>";
+               echo "<td>".$n."</td>";
+               echo "<td>".$um."</td>";
+               echo "<td>".$em."</td>";
+               echo "<td>".$cn."</td>";
+               echo "<td>".$bl."</td>";
+			   echo "<td><a class=\"btn btn-danger\" href=mailto:fionachristina6@gmail.com>Email</a></td>";
+               echo "</tr>";
+           }
+
+$conn->close();
+        ?>
+    </table>
+    </div>             
+              <hr/>         
+  </div>
+</div>
 		</div>
 	</div>
-
-	<div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
-		<div class="overlay"></div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 animate-box">
-				<div class="date-counter text-center">
-					<h2>Get 400 of Online Courses for Free</h2>
-					<h3>By Mike Smith</h3>
-					<div class="simply-countdown simply-countdown-one"></div>
-					<p><strong>Limited Offer, Hurry Up!</strong></p>
-					<p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">

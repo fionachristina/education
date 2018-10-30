@@ -165,106 +165,82 @@ if (!$query) {
 	</aside>
 
 
-<div class="container">
-    <div class="main-login main-center">
-            <form class="form-horizontal" action="book.php" method="post" class="form-style-9">
-    <?php echo display_error(); ?>
-<ul>
-  <li>
-  <?php
-    $con=mysqli_connect("localhost","root","","scholarly");
-    // Check connection
-    if (mysqli_connect_errno()) {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    }
-?>
-     <div class="form-group">
-
-<label for="username" class="cols-sm-2 control-label">Name</label>
-    <input type="text" name="name" class="form-control" placeholder="Name">
-</div>
-
-<div class="form-group">
-
-<label for="username" class="cols-sm-2 control-label">Book_Cover</label>
-    <input type="text" name="book_cover" class="form-control" placeholder="Link for Book_cover">
-</div>
-
-<div class="form-group">
-
-<label for="username" class="cols-sm-2 control-label">Link</label>
-    <input type="text" name="link" class="form-control" placeholder="Link to the book">
-</div>
-
-<div class="form-group">
-
-                    <input type="submit" name="register_btn" class="btn btn-primary" value="Add Book">
-
-                </div>
-</form>
-
-<div id="fh5co-course">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>BOOKS</h2>
-					<p>Edit or delete books</p>
-					<p><a class="btn btn-primary btn-lg btn-learn" href="addbook.php">Add Book</a></p>
-				</div>
-                </div>
-				<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-
-
-      <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "scholarly";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT * FROM subject";
-$result = $conn->query($sql);
-
-?>
-<div class="table-responsive">
-<table class="table">
-        <tr class="header">
-            <td>Name</td>
-            <td>Book_Cover</td>
-            <td>Link</td>
-            <td><i class="fas fa-trash-alt"></i></td>
-        </tr>
-        <?php
-           while ($row =$result->fetch_assoc()) {
-            $n=$row['sname'];
-            $um=$row['book _cover'];
-            $em=$row['link'];
-           
-               echo "<tr class= info>";
-               echo "<td>".$n."</td>";
-               echo "<td>".$um."</td>";
-               echo "<td>".$em."</td>";
-               echo "<td><a class=\"btn btn-danger\" href=\"delete.php?username=".$um."\">Delete</a></td>";
-               echo "</tr>";
-           }
-
-$conn->close();
-        ?>
-    </table>
-    </div>             
-              <hr/>         
-  </div>
-
-</div>
-
-        </div>    
+<?php  
+ $connect = mysqli_connect("localhost", "root", "", "scholarly");  
+ if(isset($_POST["insert"]))  
+ {  
+      $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));  
+      $query = "INSERT INTO tbl_images(name) VALUES ('$file')";  
+      if(mysqli_query($connect, $query))  
+      {  
+           echo '<script>alert("Image Inserted into Database")</script>';  
+      }  
+ }  
+ ?>  
+ <!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Webslesson Tutorial | Insert and Display Images From Mysql Database in PHP</title>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+      </head>  
+      <body>  
+           <br /><br />  
+           <div class="container" style="width:500px;">  
+                <h3 align="center">Insert and Display Images From Mysql Database in PHP</h3>  
+                <br />  
+                <form method="post" enctype="multipart/form-data">  
+                     <input type="file" name="image" id="image" />  
+                     <br />  
+                     <input type="submit" name="insert" id="insert" value="Insert" class="btn btn-info" />  
+                </form>  
+                <br />  
+                <br />  
+                <table class="table table-bordered">  
+                     <tr>  
+                          <th>Image</th>  
+                     </tr>  
+                <?php  
+                $query = "SELECT * FROM tbl_images ORDER BY id DESC";  
+                $result = mysqli_query($connect, $query);  
+                while($row = mysqli_fetch_array($result))  
+                {  
+                     echo '  
+                          <tr>  
+                               <td>  
+                                   <a href = "https://www.gceguide.xyz/files/e-books/a-level/Cambridge%20International%20AS%20and%20A%20Level%20Chemistry%20Coursebook%202nd%20Edition.pdf"> <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" class="img-thumnail" /> </a> 
+                               </td>  
+                          </tr>  
+                     ';  
+                }  
+                ?>  
+                </table>  
+           </div>  
+      </body>  
+ </html>  
+ <script>  
+ $(document).ready(function(){  
+      $('#insert').click(function(){  
+           var image_name = $('#image').val();  
+           if(image_name == '')  
+           {  
+                alert("Please Select Image");  
+                return false;  
+           }  
+           else  
+           {  
+                var extension = $('#image').val().split('.').pop().toLowerCase();  
+                if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)  
+                {  
+                     alert('Invalid Image File');  
+                     $('#image').val('');  
+                     return false;  
+                }  
+           }  
+      });  
+ });  
+ </script>    
 
 <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
